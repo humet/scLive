@@ -21,6 +21,6 @@
 
 ## [COMMANDS WHEN LIVE]
 
--stop : Stops the stream
--pin : Add to the end of a comment to pin
--unpin : Unpins any pinned comments
+-stop : Stops the stream 
+-pin : Add to the end of a comment to pin 
+-unpin : Unpins any pinned comments 
