@@ -4,6 +4,34 @@
 		"selected_items":
 		[
 			[
+				"option",
+				"option_value"
+			],
+			[
+				"str_re",
+				"str_replace"
+			],
+			[
+				"comment",
+				"commentResponse"
+			],
+			[
+				"comm",
+				"commentResponse"
+			],
+			[
+				"brad",
+				"broadcastId"
+			],
+			[
+				"bro",
+				"broadcastId"
+			],
+			[
+				"broad",
+				"broadcastId"
+			],
+			[
 				"ls",
 				"lts\tletter-spacing"
 			],
@@ -235,6 +263,50 @@
 	},
 	"buffers":
 	[
+		{
+			"contents": "",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix",
+				"name": "Xdebug Context",
+				"read_only": true,
+				"scratch": true
+			}
+		},
+		{
+			"contents": "",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix",
+				"name": "Xdebug Watch",
+				"read_only": true,
+				"scratch": true
+			}
+		},
+		{
+			"contents": "",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix",
+				"name": "Xdebug Stack",
+				"read_only": true,
+				"scratch": true
+			}
+		},
+		{
+			"contents": "=> /Users/robhumar/Sites/scLive/public/src/App/Command/scLiveLogin.php\n  |+| 49\n",
+			"settings":
+			{
+				"buffer_size": 80,
+				"line_ending": "Unix",
+				"name": "Xdebug Breakpoint",
+				"read_only": true,
+				"scratch": true
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -247,6 +319,10 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"xdeb",
+				"Xdebug: Stop Debugging"
+			],
 			[
 				"xdebug",
 				"Xdebug: Stop Debugging (Close Windows)"
@@ -284,22 +360,24 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/robhumar/Sites/scLive/public",
-		"/Users/robhumar/Sites/scLive/public/config",
-		"/Users/robhumar/Sites/scLive/public/OLD",
-		"/Users/robhumar/Sites/scLive/public/src",
-		"/Users/robhumar/Sites/scLive/public/src/App",
-		"/Users/robhumar/Sites/scLive/public/src/App/Command"
+		"/Users/robhumar/Sites/scLive/public"
 	],
 	"file_history":
 	[
+		"/Users/robhumar/Sites/scLive/public/src/App/Command/streamStart.php",
+		"/Users/robhumar/Sites/scLive/public/vendor/mgp25/instagram-php/src/Request/Live.php",
+		"/Users/robhumar/Sites/scLive/public/src/App/Command/streamRecord.php",
+		"/Users/robhumar/Sites/scLive/public/vendor/mgp25/instagram-php/src/Response/CommentBroadcastResponse.php",
+		"/Users/robhumar/Sites/scLive/public/vendor/mgp25/instagram-php/src/Response/CommentResponse.php",
+		"/Users/robhumar/Sites/scLive/public/vendor/mgp25/instagram-php/src/Response/Model/LiveComment.php",
 		"/Users/robhumar/Sites/scLive/public/src/App/Command/scLiveLogin.php",
+		"/Users/robhumar/Sites/scLive/public/config/services.php",
+		"/Users/robhumar/Sites/scLive/public/config/commands.php",
+		"/Users/robhumar/Sites/scLive/public/vendor/mgp25/instagram-php/src/Response/BroadcastCommentsResponse.php",
+		"/Users/robhumar/Sites/scLive/public/src/App/Command/streamStart2.php",
 		"/Users/robhumar/Sites/scLive/public/src/App/Command/scLiveSetup.php",
 		"/Users/robhumar/Sites/scLive/public/OLD/liveBroadcast.php",
-		"/Users/robhumar/Sites/scLive/public/config/services.php",
-		"/Users/robhumar/Sites/scLive/public/src/App/Command/streamStart.php",
 		"/Users/robhumar/Sites/scLive/public/config/setup.php",
-		"/Users/robhumar/Sites/scLive/public/config/commands.php",
 		"/Users/robhumar/Sites/scLive/public/src/App/config.php",
 		"/Users/robhumar/Sites/scLive/public/src/App/loginFunctions.php",
 		"/Users/robhumar/Sites/scLive/public/scLive",
@@ -413,24 +491,18 @@
 		"/Users/robhumar/Sites/wp/www/socialchaingroup/htdocs/wp-content/themes/socialchaingroup/app/walker.php",
 		"/Users/robhumar/Sites/wp/www/gamebyte/htdocs/wp-content/themes/gamebyte/node_modules/scroll-depth/jquery.scrolldepth.js",
 		"/Users/robhumar/Sites/wp/www/gamebyte/htdocs/wp-content/themes/gamebyte/node_modules/bootstrap/scss/bootstrap.scss",
-		"/Users/robhumar/Sites/wp/www/gamebyte/htdocs/wp-content/themes/gamebyte/resources/views/partials/page-header.blade.php",
-		"/Users/robhumar/Sites/wp/www/gamebyte/htdocs/wp-content/themes/gamebyte/resources/assets/scripts/routes/archive.js",
-		"/Users/robhumar/Sites/wp/www/gamebyte/htdocs/wp-content/themes/gamebyte/resources/assets/styles/layouts/_footer.scss",
-		"/Users/robhumar/Sites/wp/www/gamebyte/htdocs/wp-content/themes/gamebyte/resources/views/partials/sidebar.blade.php",
-		"/Users/robhumar/Sites/wp/www/gamebyte/htdocs/wp-content/themes/gamebyte/resources/assets/styles/components/_type.scss",
-		"/Users/robhumar/Sites/wp/www/gamebyte/htdocs/wp-content/themes/gamebyte/resources/assets/styles/components/_relatedarticles.scss",
-		"/Users/robhumar/Sites/wp/www/gamebyte/htdocs/wp-content/themes/gamebyte/node_modules/slick-carousel/slick/slick-theme.css",
-		"/Users/robhumar/Sites/wp/www/gamebyte/htdocs/wp-content/themes/gamebyte/node_modules/slick-carousel/slick/slick-theme.scss"
+		"/Users/robhumar/Sites/wp/www/gamebyte/htdocs/wp-content/themes/gamebyte/resources/views/partials/page-header.blade.php"
 	],
 	"find":
 	{
-		"height": 39.0
+		"height": 24.0
 	},
 	"find_in_files":
 	{
 		"height": 101.0,
 		"where_history":
 		[
+			"/Users/robhumar/Sites/scLive/public/vendor/mgp25"
 		]
 	},
 	"find_state":
@@ -438,6 +510,12 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"getComment()",
+			"getComments()",
+			"$broadcastId",
+			"$ig",
+			"$this->broadcastId",
+			"$this->ig"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -445,6 +523,10 @@
 		"regex": false,
 		"replace_history":
 		[
+			"$GLOBALS['broadcastId']",
+			"$GLOBALS['ig']",
+			"$broadcastId",
+			"$ig"
 		],
 		"reverse": false,
 		"show_context": true,
@@ -457,6 +539,130 @@
 		{
 			"sheets":
 			[
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Xdebug Client/Xdebug.tmLanguage",
+							"word_wrap": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Xdebug Client/Xdebug.tmLanguage",
+							"word_wrap": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 2,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Xdebug Client/Xdebug.tmLanguage",
+							"word_wrap": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 80,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								80,
+								80
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Xdebug Client/Xdebug.tmLanguage",
+							"word_wrap": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -475,18 +681,32 @@
 			[
 				0,
 				0,
-				1,
+				2,
 				1
+			],
+			[
+				0,
+				1,
+				1,
+				2
+			],
+			[
+				1,
+				1,
+				2,
+				2
 			]
 		],
 		"cols":
 		[
 			0.0,
+			0.5,
 			1.0
 		],
 		"rows":
 		[
 			0.0,
+			0.7,
 			1.0
 		]
 	},
@@ -503,7 +723,7 @@
 	"project": "scLive.sublime-project",
 	"replace":
 	{
-		"height": 44.0
+		"height": 70.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -536,6 +756,49 @@
 	"selected_group": 0,
 	"settings":
 	{
+		"xdebug":
+		{
+			"restore_index":
+			{
+				"30":
+				{
+					"group": 0,
+					"index": 0
+				},
+				"36":
+				{
+					"group": 0,
+					"index": 1
+				},
+				"66":
+				{
+					"group": 0,
+					"index": 2
+				}
+			},
+			"restore_layout":
+			{
+				"cells":
+				[
+					[
+						0,
+						0,
+						1,
+						1
+					]
+				],
+				"cols":
+				[
+					0.0,
+					1.0
+				],
+				"rows":
+				[
+					0.0,
+					1.0
+				]
+			}
+		}
 	},
 	"show_minimap": true,
 	"show_open_files": false,
