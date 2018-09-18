@@ -1,0 +1,5 @@
+.DS_STORE
+.vagrant
+composer.phar
+vendor
+*.sublime-project
