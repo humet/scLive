@@ -132,11 +132,11 @@ class scLiveLogin extends SymfonyCommand
                         $io->success("Provided you entered the correct code, your login attempt has probably been successful. Please try re-running the script!");
                         exit();
                     } catch (Exception $ex) {
-                        echo $ex->getMessage();
+                         $io->error($ex->getMessage());
                         exit;
                     }
                 } else {
-                    $io->error("Account Flagged: Please try logging into instagram.com from this exact computer before trying to run this script again!");
+                    $io->warning("Account Flagged: Please try logging into instagram.com from this exact computer before trying to run this script again!");
                     exit();
                 }
             }
