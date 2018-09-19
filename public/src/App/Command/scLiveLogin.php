@@ -61,7 +61,7 @@ class scLiveLogin extends SymfonyCommand
           $question = new Question('Please enter the 2auth code you have received: ', null);
           $auth_code = $helper->ask($input, $output, $question);
 
-          $ig->finishTwoFactorLogin($username, $password, $twoFactorIdentifier, $authCode);
+          $ig->finishTwoFactorLogin($username, $password, $twoFactorIdentifier, $auth_code);
 
           return true;
         }
