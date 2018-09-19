@@ -16,10 +16,11 @@
 
 ## [TO RUN]
 
-1) Navigate to 'cd /var/www/public' and run...
-2) Run 'php scLive setup' followed by your username and password
-3) Run 'php scLive login'
-4) Run 'php scLive stream:start'
+1) Navigate to installation directory and run 'vagrant ssh' 
+2) Navigate to 'cd /var/www/public' and run...
+3) Run 'php scLive setup' followed by your username and password
+4) Run 'php scLive login'
+5) Run 'php scLive stream:start'
 
 ## [COMMANDS WHEN LIVE]
 
