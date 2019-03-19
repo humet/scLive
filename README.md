@@ -26,7 +26,7 @@
 ## STARTING A LIVE STREAM
 php scLive stream:start
 
-**COMMANDS WHEN LIVE**
+**Commands When Live**
 - -stop : Stops the stream
 - -pin : Add to the end of a comment to pin
 - -unpin : Unpins any pinned comments
@@ -35,4 +35,4 @@ php scLive stream:start
 php scLive getquestions
 
 **Options**
-- --list *Lists all responses*
+- --list : *Lists all responses*
