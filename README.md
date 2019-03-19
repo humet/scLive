@@ -12,7 +12,7 @@
 1) Git clone to a directory
 2) Navigate to that directory and run 'vagrant up'
 3) SSH into the newly created Vagrant Box by running 'vagrant ssh' and navigate to 'cd /var/www/public'
-4) Run 'composer install'
+4) Run 'composer update && composer install'
 
 # [TO SETUP]
 
