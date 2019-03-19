@@ -6,9 +6,19 @@ use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Console\Question\Question;
 use Symfony\Component\Console\Style\SymfonyStyle;
+use InstagramAPI\Instagram;
+use InstagramAPI\Exception\ChallengeRequiredException;
+use InstagramAPI\Request\Live;
+use InstagramAPI\Response\Model\User;
+use InstagramAPI\Response\Model\Comment;
 use mysqli;
 
 
+class ExtendedInstagram extends Instagram {
+    public function changeUser( $username, $password ) {
+        $this->_setUser( $username, $password );
+    }
+}
 
 /**
  * Class startStream
@@ -38,7 +48,7 @@ class scLiveLogin extends SymfonyCommand
      */
     protected function execute(InputInterface $input, OutputInterface $output)
     {
-      
+
       $configSettings = new \App\Config();
       $config = $configSettings->getSettings();
 
@@ -46,7 +56,7 @@ class scLiveLogin extends SymfonyCommand
       $password = $config['password'];
       $debug = $GLOBALS['debug'];
       $truncatedDebug = $GLOBALS['truncateddebug'];
-      $ig = new \InstagramAPI\Instagram($debug, $truncatedDebug);
+      $ig = new ExtendedInstagram($debug, $truncatedDebug);
       $io = new SymfonyStyle($input, $output);
 
       try {
@@ -71,12 +81,14 @@ class scLiveLogin extends SymfonyCommand
         }
       } catch (\Exception $e) {
         try {
+
+            //print_r($e);
             /** @noinspection PhpUndefinedMethodInspection */
             if ($e instanceof ChallengeRequiredException && $e->getResponse()->getErrorType() === 'checkpoint_challenge_required') {
                 $response = $e->getResponse();
                 $output->writeln("Your account has been flagged by Instagram. We can attempt to verify your account by a text or an email. Would you like to do that?");
                 $output->writeln("Note: If you already did this, and you think you entered the right code, do not attempt this again! Try logging into instagram.com from this same computer or enabling 2FA.");
-                
+
                 $helper = $this->getHelper('question');
                 $question = new Question("Type \"yes\" to do so or anything else to not!: ", null);
                 $attemptBypass = $helper->ask($input, $output, $question);
@@ -85,9 +97,9 @@ class scLiveLogin extends SymfonyCommand
                     $output->writeln("Please wait while we prepare to verify your account.");
                     sleep(3);
                     $helper = $this->getHelper('question');
-                    $question = new Question("Type \"sms\" for text verification or \"email\" for email verification.\nNote: If you do not have a phone number or an email address linked to your account, don't use that method ;) You can also just press enter to abort.", null);
+                    $question = new Question("Type \"sms\" for text verification or \"email\" for email verification.\nNote: If you do not have a phone number or an email address linked to your account, don't use that method ;) You can also just press enter to abort: ", null);
                     $choice = $helper->ask($input, $output, $question);
-          
+
                     if ($choice === "sms") {
                         $verification_method = 0;
                     } elseif ($choice === "email") {
@@ -114,9 +126,9 @@ class scLiveLogin extends SymfonyCommand
                                 exit();
                             }
                         }
-                        
+
                         $helper = $this->getHelper('question');
-                        $question = new Question("Please enter the code you received via " . ($verification_method ? 'email' : 'sms') . "!", null);
+                        $question = new Question("Please enter the code you received via " . ($verification_method ? 'email' : 'sms') . "!: ", null);
                         $cCode = $helper->ask($input, $output, $question);
 
                         $ig->changeUser($username, $password);
@@ -145,6 +157,7 @@ class scLiveLogin extends SymfonyCommand
             exit();
         }
         $io->error('Error While Logging in to Instagram: ' . $e->getMessage());
+        $io->error($username . " " . $password);
         exit();
 }
 

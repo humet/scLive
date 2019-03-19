@@ -56,7 +56,7 @@ class scLiveSetup extends SymfonyCommand
       // Check connection
       if ($this->conn->connect_error) {
           die("Connection failed: " . $conn->connect_error);
-      } 
+      }
 
       // Create database
       $sql = "CREATE DATABASE IF NOT EXISTS " . $GLOBALS['dbname'];
@@ -87,7 +87,7 @@ class scLiveSetup extends SymfonyCommand
 
       // sql to create table
       $sql = "CREATE TABLE IF NOT EXISTS " . $GLOBALS['dbname'] . "." . $GLOBALS['tableprefix'] . "config (
-      option_id BIGINT(20) UNSIGNED AUTO_INCREMENT PRIMARY KEY, 
+      option_id BIGINT(20) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
       option_name VARCHAR(60) NOT NULL,
       option_value VARCHAR(60) NOT NULL
       )";
@@ -102,7 +102,7 @@ class scLiveSetup extends SymfonyCommand
 
       // sql to create table
       $sql = "CREATE TABLE IF NOT EXISTS " . $GLOBALS['dbname'] . "." . $GLOBALS['tableprefix'] . "comments (
-      comment_id BIGINT(20) UNSIGNED AUTO_INCREMENT PRIMARY KEY, 
+      comment_id BIGINT(20) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
       comment_ts VARCHAR(60) NOT NULL,
       comment_content TEXT(120) NOT NULL,
       comment_instaid VARCHAR(60) NOT NULL

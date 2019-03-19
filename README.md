@@ -14,16 +14,26 @@
 3) SSH into the newly created Vagrant Box by running 'vagrant ssh' and navigate to 'cd /var/www/public'
 4) Run 'composer install'
 
-## [TO RUN]
+## [TO SETUP]
 
-1) Navigate to installation directory and run 'vagrant ssh' 
+1) Navigate to installation directory and run 'vagrant ssh'
 2) Navigate to 'cd /var/www/public' and run...
 3) Run 'php scLive setup' followed by your username and password
 4) Run 'php scLive login'
-5) Run 'php scLive stream:start'
 
-## [COMMANDS WHEN LIVE]
+##### STARTING A LIVE STREAM
+php scLive stream:start
 
--stop : Stops the stream 
--pin : Add to the end of a comment to pin 
+**COMMANDS WHEN LIVE**
+
+-stop : Stops the stream
+
+-pin : Add to the end of a comment to pin
+
 -unpin : Unpins any pinned comments
+
+##### STORY QUESTION DETAILS
+php scLive getquestions
+
+**Options**
+--list *Lists all responses*
